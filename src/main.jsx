@@ -6,14 +6,14 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 // routes
-import Index from "./routes/Index.jsx";
+import App from "./App.jsx";
 import Cart from "./routes/Cart.jsx";
 import Error from "./routes/Error.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Index />,
+    element: <App />,
     errorElement: <Error />,
   },
   {
