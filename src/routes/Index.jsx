@@ -1,3 +1,5 @@
+import styles from "/src/styles/index.module.scss";
+
 const Index = () => {
   return (
     <>
