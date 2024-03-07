@@ -1,13 +1,24 @@
+// react
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App.jsx";
+
+// react router
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
+// routes
 import Index from "./routes/Index.jsx";
+import Cart from "./routes/Cart.jsx";
+import Error from "./routes/Error.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Index />,
+    errorElement: <Error />,
+  },
+  {
+    path: "/cart",
+    element: <Cart />,
   },
 ]);
 
