@@ -9,12 +9,17 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App.jsx";
 import Cart from "./routes/Cart.jsx";
 import Error from "./routes/Error.jsx";
+import Shop from "./routes/Shop.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
     errorElement: <Error />,
+  },
+  {
+    path: "/shop",
+    element: <Shop />,
   },
   {
     path: "/cart",
