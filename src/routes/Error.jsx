@@ -5,7 +5,7 @@ const Error = () => {
     <>
       <h2>Error 404</h2>
       <p>
-        It seems this page doesn't exist. <Link to="/">Click Here</Link> to
+        It seems this page doesn&apos;t exist. <Link to="/">Click Here</Link> to
         navigate back to the home page.
       </p>
     </>
