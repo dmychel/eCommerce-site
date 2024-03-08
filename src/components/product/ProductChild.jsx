@@ -14,7 +14,6 @@ const ProductChild = ({ product }) => {
 
 
     return (
-
         <div className={styles.product} onMouseOver={() => mouseOver(product.id)} onMouseOut={() => mouseOut(product.id)} >
             <div className={styles.productImage}>
                 <img src={product.preview} id={product.id} />
@@ -24,6 +23,10 @@ const ProductChild = ({ product }) => {
                 <p>{product.model}</p>
                 <span>{product.price}</span>
             </div>
+            <form>
+                <input type="number" min={0} max={99} />
+                <input type="submit" value='&#9989;' />
+            </form>
         </div>
     )
 }
