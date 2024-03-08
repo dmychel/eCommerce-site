@@ -1,17 +1,8 @@
-body {
-  background-color: coral;
-}
-
 .home {
   display: flex;
   flex-direction: column;
-  background-image: url("/assets/imgs/background.webp");
-  background-size: auto;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100vh;
+  height: 100%;
   width: 100%;
-  overflow-y: scroll;
 }
 
 .sub {
@@ -55,4 +46,13 @@ body {
   max-width: 60%;
   max-height: 60%;
   background-color: rgba(0, 0, 0, 0.436);
+}
+
+.button {
+  background-color: black;
+  padding: 10px 30px 10px 30px;
+  border-radius: 50px;
+  color: white;
+  text-decoration: none;
+  caret-color: transparent;
 }

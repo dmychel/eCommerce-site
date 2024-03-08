@@ -3,14 +3,21 @@
   padding: 0;
 }
 
-body {
-  overflow: hidden;
-}
-
 .header {
   display: flex;
   justify-content: space-between;
   padding: 8px;
+}
+
+main {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  background-image: url("/assets/imgs/background.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  height: 100vh;
+  background-color: coral;
 }
 
 .header nav {
