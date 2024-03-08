@@ -1,0 +1,15 @@
+footer {
+  background-color: #212322;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+  font-size: 0.75rem;
+  padding: 20px;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}

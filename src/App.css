@@ -3,13 +3,9 @@
   padding: 0;
 }
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  padding: 8px;
-}
-
 main {
+  display: flex;
+  flex-direction: column;
   overflow-y: scroll;
   scroll-behavior: smooth;
   background-image: url("/assets/imgs/background.webp");
@@ -18,9 +14,4 @@ main {
   background-size: auto;
   height: 100vh;
   background-color: coral;
-}
-
-.header nav {
-  display: flex;
-  gap: 1em;
 }
