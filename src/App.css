@@ -3,12 +3,6 @@
   padding: 0;
 }
 
-body,
-html {
-  height: 100%;
-}
-
-
 main {
   display: flex;
   flex-direction: column;
