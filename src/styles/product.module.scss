@@ -38,6 +38,30 @@ img {
     width: 100%;
 }
 
+form {
+    display: flex;
+    gap: 1em;
+}
+
+input[type=number] {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 5em;
+    text-align: center;
+    outline: none;
+    height: 5em;
+    width: 3em;
+}
+
+input[type=submit] {
+    border: none;
+    font-size: 1rem;
+    display: flex;
+    background-color: transparent;
+    cursor: pointer;
+}
+
 
 @media screen and (max-width:1746px) {
     .product {
