@@ -53,8 +53,6 @@ const Product = () => {
         },
     ]
 
-
-
     return (
         <section className={styles.productMaster}>
             <div className={styles.productWrapper}>
