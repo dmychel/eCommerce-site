@@ -1,43 +1,26 @@
+.productMaster {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    border: 1px solid black;
+}
 
-.productParent {
+.productWrapper {
+    border: 1px solid;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: left;
-    margin: auto;
-    align-items: center;
-    width: 60%;
-    background-color: rgba(0, 0, 0, 0.651);
-    padding: 50px;
+    width: 80%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.507);
 }
 
 .product {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 20%;
-    height: 20%;
+    width: 15%;
     background-color: white;
     padding: 20px;
-}
-
-.productImage {
- height: 40%;
- display: flex;
- justify-content: center;
- align-items: center;
-}
-
-.productDesc {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    gap: 0;
-}
-
-img {
-    width: 100%;
-    height: auto;
 }
 
 form {
@@ -72,9 +55,17 @@ input[type=submit] {
 }
 
 @media screen and (max-width:1040px) {
-    .productParent {
+    .productWrapper {
         width: 70%;
     }
+}
+
+@media screen and (max-width: 960px) {
+    .productWrapper {
+        width: 90%;
+        justify-content: center;
+    }
+
 }
 
 @media screen and (max-width: 870px) {
@@ -84,11 +75,7 @@ input[type=submit] {
 }
 
 @media screen and (max-width: 686px) {
-    .productParent {
-        justify-content: center;
-    }
-
     .product {
-        width: 60%;
+        width: 80%;
     }
 }
