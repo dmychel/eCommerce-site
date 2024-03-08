@@ -56,11 +56,14 @@ const Product = () => {
 
 
     return (
-        <div className={styles.productParent}>
-            {items.map((obj, index) => (
-                <ProductChild product={obj} key={index} />
-            ))}
-        </div>
+        <section className={styles.productMaster}>
+            <div className={styles.productWrapper}>
+                {items.map((obj, index) => (
+                    <ProductChild product={obj} key={index} />
+                ))}
+            </div>
+        </section>
+
 
 
     )
