@@ -11,7 +11,7 @@ const Index = () => {
           </Link>
         </div>
         <div className={styles.image}>
-          <img src="/assets/imgs/sub-1.webp" alt="" />
+          <img src="/assets/imgs/sub/sub-1.webp" alt="" />
         </div>
       </div>
 
@@ -20,7 +20,7 @@ const Index = () => {
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
         <div className={styles.image}>
-          <img src="/assets/imgs/sub-2.webp" alt="" />
+          <img src="/assets/imgs/sub/sub-2.webp" alt="" />
         </div>
       </div>
 
@@ -29,7 +29,7 @@ const Index = () => {
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
         <div className={styles.image}>
-          <img src="/assets/imgs/sub-3.webp" alt="" />
+          <img src="/assets/imgs/sub/sub-3.webp" alt="" />
         </div>
       </div>
 
@@ -38,7 +38,7 @@ const Index = () => {
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
         <div className={styles.image}>
-          <img src="/assets/imgs/sub-4.webp" alt="" />
+          <img src="/assets/imgs/sub/sub-4.webp" alt="" />
         </div>
       </div>
     </section>
