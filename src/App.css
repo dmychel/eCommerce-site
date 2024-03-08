@@ -3,15 +3,20 @@
   padding: 0;
 }
 
+body,
+html {
+  height: 100%;
+}
+
+
 main {
   display: flex;
   flex-direction: column;
-  overflow-y: scroll;
-  scroll-behavior: smooth;
-  background-image: url("/assets/imgs/background.webp");
-  background-position: center;
-  background-repeat: no-repeat;
+  background-image: url('/assets/imgs/background.webp');
   background-size: auto;
-  height: 100vh;
-  background-color: coral;
+  background-repeat: space;
+  background-position: auto;
+  background-attachment: fixed;
+  background-position: center;
+  background-color: white;
 }
