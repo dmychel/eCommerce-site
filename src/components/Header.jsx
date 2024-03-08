@@ -1,9 +1,10 @@
 import styles from "/src/styles/header.module.scss";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <header>
-      <h1>Onitsuka Tiger</h1>
+      <Link to="/"><h1>Onitsuka Tiger</h1></Link>
       <nav>
         <span>shop</span>
         <span>cart</span>
