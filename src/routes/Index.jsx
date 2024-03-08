@@ -17,7 +17,7 @@ const Index = () => {
 
       <div className={`${styles.sub} ${styles.sub2}`}>
         <div className={styles.text}>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <p>THE BIRTH OF AN ICON</p>
         </div>
         <div className={styles.image}>
           <img src="/assets/imgs/sub/sub-2.webp" alt="" />
@@ -26,7 +26,7 @@ const Index = () => {
 
       <div className={styles.sub}>
         <div className={styles.text}>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <p>AN ATHLETIC FOREFRUNNER</p>
         </div>
         <div className={styles.image}>
           <img src="/assets/imgs/sub/sub-3.webp" alt="" />
@@ -35,7 +35,7 @@ const Index = () => {
 
       <div className={`${styles.sub} ${styles.sub2}`}>
         <div className={styles.text}>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <p>BORN FROM AMBITION</p>
         </div>
         <div className={styles.image}>
           <img src="/assets/imgs/sub/sub-4.webp" alt="" />
