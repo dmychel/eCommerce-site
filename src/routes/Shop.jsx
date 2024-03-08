@@ -1,5 +1,9 @@
+import Product from "../components/product/Product";
+
 const Shop = () => {
-  return <h1>Shop</h1>;
+  return (
+    <Product />
+  )
 };
 
 export default Shop;
