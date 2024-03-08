@@ -6,17 +6,12 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Cart from "./routes/Cart.jsx";
 import Shop from "./routes/Shop.jsx";
 import Error from "./routes/Error.jsx";
+import Header from "./components/Header.jsx";
 
 function App() {
   return (
     <BrowserRouter>
-      <header>
-        <h1>Onitsuka Tiger</h1>
-        <nav>
-          <span>shop</span>
-          <span>cart</span>
-        </nav>
-      </header>
+      <Header />
       <main>
         <Routes>
           <Route path="/" element={<Index />} />
