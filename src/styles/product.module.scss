@@ -1,81 +1,77 @@
 .productMaster {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 100%;
-    border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  border: 1px solid black;
 }
 
 .productWrapper {
-    border: 1px solid;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 80%;
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.507);
+  border: 1px solid;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 80%;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.507);
 }
 
 .product {
-    width: 15%;
-    background-color: white;
-    padding: 20px;
+  width: 15%;
+  background-color: white;
+  padding: 20px;
 }
 
 form {
-    display: flex;
-    gap: 1em;
+  display: flex;
+  gap: 1em;
 }
 
-input[type=number] {
-    display: flex;
-    flex-direction: column;
-    border: 1px solid black;
-    border-radius: 5em;
-    text-align: center;
-    outline: none;
-    height: 3em;
-    width: 3em;
+input[type="number"] {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  text-align: center;
+  outline: none;
+  width: 3em;
 }
 
-input[type=submit] {
-    border: none;
-    font-size: 1rem;
-    display: flex;
-    background-color: transparent;
-    cursor: pointer;
+input[type="submit"] {
+  border: none;
+  font-size: 1rem;
+  display: flex;
+  background-color: transparent;
+  cursor: pointer;
 }
 
-
-@media screen and (max-width:1746px) {
-    .product {
-        width: 25%;
-    }
+@media screen and (max-width: 1746px) {
+  .product {
+    width: 25%;
+  }
 }
 
-@media screen and (max-width:1040px) {
-    .productWrapper {
-        width: 70%;
-    }
+@media screen and (max-width: 1040px) {
+  .productWrapper {
+    width: 70%;
+  }
 }
 
 @media screen and (max-width: 960px) {
-    .productWrapper {
-        width: 90%;
-        justify-content: center;
-    }
-
+  .productWrapper {
+    width: 90%;
+    justify-content: center;
+  }
 }
 
 @media screen and (max-width: 870px) {
-    .product {
-        width: 40%;
-    }
+  .product {
+    width: 40%;
+  }
 }
 
 @media screen and (max-width: 686px) {
-    .product {
-        width: 80%;
-    }
+  .product {
+    width: 80%;
+  }
 }
