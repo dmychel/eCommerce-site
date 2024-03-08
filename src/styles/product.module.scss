@@ -7,7 +7,6 @@
     margin: auto;
     align-items: center;
     width: 60%;
-    gap: 1em;
     background-color: rgba(0, 0, 0, 0.651);
     padding: 50px;
 }
@@ -15,8 +14,9 @@
 .product {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     width: 20%;
-    height: fit-content;
+    height: 20%;
     background-color: white;
     padding: 20px;
 }
@@ -31,11 +31,13 @@
 .productDesc {
     display: flex;
     justify-content: center;
+    width: 100%;
     gap: 0;
 }
 
 img {
     width: 100%;
+    height: auto;
 }
 
 form {
@@ -50,7 +52,7 @@ input[type=number] {
     border-radius: 5em;
     text-align: center;
     outline: none;
-    height: 5em;
+    height: 3em;
     width: 3em;
 }
 
