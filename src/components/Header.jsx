@@ -1,3 +1,5 @@
+import styles from "/src/styles/header.module.scss";
+
 const Header = () => {
   return (
     <header>
