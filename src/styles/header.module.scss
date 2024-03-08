@@ -9,5 +9,12 @@ header {
 
 nav {
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 1em;
+  font-size: 1em;
+}
+
+.cart img {
+  max-width: 2em;
 }
