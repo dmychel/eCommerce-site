@@ -1,7 +1,9 @@
 import ProductChild from "./ProductChild"
 import styles from '/src/styles/product.module.scss'
 
-const Product = () => {
+import PropTypes from 'prop-types'
+
+const Product = ({ handleSubmit, quantity, setQuantity }) => {
     const items = [
         {
             preview: '/assets/imgs/preview/delux/side.webp',
@@ -57,14 +59,17 @@ const Product = () => {
         <section className={styles.productMaster}>
             <div className={styles.productWrapper}>
                 {items.map((obj, index) => (
-                    <ProductChild product={obj} key={index} />
+                    <ProductChild product={obj} key={index} handleSubmit={handleSubmit} quantity={quantity} setQuantity={setQuantity} />
                 ))}
             </div>
         </section>
-
-
-
     )
+}
+
+Product.propTypes = {
+    handleSubmit: PropTypes.func,
+    quantity: PropTypes.number,
+    setQuantity: PropTypes.func,
 }
 
 export default Product
