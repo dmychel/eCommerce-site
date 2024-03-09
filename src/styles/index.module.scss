@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   height: 100%;
   width: 100%;
   overflow-x: hidden;
@@ -13,7 +13,7 @@
   justify-content: center;
   flex-direction: row;
   align-items: center;
-  max-width: 100%;
+  width: 100%;
   height: 100%;
   font-size: 2rem;
   background-color: rgba(0, 0, 0, 0.356);
@@ -62,7 +62,7 @@
   text-decoration: none;
   caret-color: transparent;
   transition: 0.05s ease-in-out;
-  font-size: 1.25rem;
+  font-size: 2.5rem;
 }
 
 .button:hover {
