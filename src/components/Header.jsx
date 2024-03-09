@@ -11,7 +11,7 @@ const Header = ({ cart }) => {
       <nav>
         <Link to="/shop">shop</Link>
         <div className={styles.cart}>
-          <Link >
+          <Link to='/cart'>
             <img src="/assets/imgs/icons/cart.png" alt="" />
           </Link>
           <span>{cart.length}</span>
