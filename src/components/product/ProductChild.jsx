@@ -1,7 +1,7 @@
 import styles from '/src/styles/product.module.scss'
 import PropTypes from 'prop-types'
 
-const ProductChild = ({ product }) => {
+const ProductChild = ({ product, handleSubmit, quantity, setQuantity }) => {
     const mouseOver = (id) => {
         const img = document.getElementById(id)
         img.src = product.preview2
@@ -33,7 +33,9 @@ const ProductChild = ({ product }) => {
 
 ProductChild.propTypes = {
     product: PropTypes.object,
-
+    handleSubmit: PropTypes.func,
+    quantity: PropTypes.number,
+    setQuantity: PropTypes.func,
 }
 
 export default ProductChild
