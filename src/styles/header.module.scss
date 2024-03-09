@@ -12,7 +12,14 @@ nav {
   align-items: center;
   justify-content: center;
   gap: 1em;
-  font-size: 1em;
+}
+
+.cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 0;
 }
 
 .cart img {
