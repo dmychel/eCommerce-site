@@ -10,7 +10,7 @@ const Product = ({ handleSubmit }) => {
             preview2: '/assets/imgs/preview/delux/45-right.webp',
             title: "Onitsuka Tiger",
             model: "Mexico 66 Deluxe sneakers",
-            price: "100 USD",
+            price: 100,
             id: crypto.randomUUID()
         },
         {
@@ -18,7 +18,7 @@ const Product = ({ handleSubmit }) => {
             preview2: '/assets/imgs/preview/mito/45-right.webp',
             title: "Onitsuka Tiger",
             model: "Mito low cut sneakers",
-            price: "100 USD",
+            price: 100,
             id: crypto.randomUUID()
         },
         {
@@ -26,7 +26,7 @@ const Product = ({ handleSubmit }) => {
             preview2: '/assets/imgs/preview/mexico-66/45-right.webp',
             title: "Onitsuka Tiger",
             model: `Mexico 66 "Cream Peacoat" sneakers`,
-            price: "100 USD",
+            price: 100,
             id: crypto.randomUUID()
         },
         {
@@ -34,7 +34,7 @@ const Product = ({ handleSubmit }) => {
             preview2: '/assets/imgs/preview/vintage/45-right.webp',
             title: "Onitsuka Tiger",
             model: `Mexico 66™ Vintage "White/Blue" sneakers`,
-            price: "100 USD",
+            price: 100,
             id: crypto.randomUUID()
         },
         {
@@ -42,7 +42,7 @@ const Product = ({ handleSubmit }) => {
             preview2: '/assets/imgs/preview/kill-bill/45-right.webp',
             title: "Onitsuka Tiger",
             model: "Mexico 66™ Kill Bill - 2023 sneakers",
-            price: "100 USD",
+            price: 100,
             id: crypto.randomUUID()
         },
         {
@@ -50,7 +50,7 @@ const Product = ({ handleSubmit }) => {
             preview2: '/assets/imgs/preview/fiery-red/45-right.webp',
             title: "Onitsuka Tiger",
             model: `Mexico 66 "Fiery Red" sneakers`,
-            price: "100 USD",
+            price: 100,
             id: crypto.randomUUID()
         },
     ]
