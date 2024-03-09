@@ -66,7 +66,7 @@ function App() {
   return (
     <BrowserRouter>
       <section className="app">
-        <Header />
+        <Header cart={cart} />
         <main>
           <Routes>
             <Route path="/" element={<Index />} />
