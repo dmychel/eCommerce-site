@@ -9,7 +9,16 @@ import Error from "./routes/Error.jsx";
 import Header from "./components/Header.jsx";
 import Footer from "./components/Footer.jsx";
 
+
+
 function App() {
+  const handleSubmit = (e, product, quantity) => {
+    e.preventDefault()
+    console.log('submit')
+    console.log(product)
+    console.log(quantity)
+  }
+
   return (
     <BrowserRouter>
       <section className="app">
@@ -17,7 +26,7 @@ function App() {
         <main>
           <Routes>
             <Route path="/" element={<Index />} />
-            <Route path="/shop" element={<Shop />} />
+            <Route path="/shop" element={<Shop handleSubmit={handleSubmit} />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="*" element={<Error />} />
           </Routes>
