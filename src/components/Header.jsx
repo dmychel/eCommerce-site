@@ -10,10 +10,13 @@ const Header = ({ cart }) => {
       </Link>
       <nav>
         <Link to="/shop">shop</Link>
-        <Link className={styles.cart}>
-          <img src="/assets/imgs/icons/cart.png" alt="" />
+        <div className={styles.cart}>
+          <Link >
+            <img src="/assets/imgs/icons/cart.png" alt="" />
+          </Link>
           <span>{cart.length}</span>
-        </Link>
+        </div>
+
       </nav>
     </header>
   );
