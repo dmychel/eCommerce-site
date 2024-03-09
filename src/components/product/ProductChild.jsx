@@ -25,7 +25,7 @@ const ProductChild = ({ product, handleSubmit }) => {
                 <p>{product.model}</p>
                 <span>{product.price}</span>
             </div>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={(e) => handleSubmit(e, product, quantity)}>
                 <input type="number" min={0} max={99} value={quantity} onChange={(e) => setQuantity(e.target.value)} />
                 <input type="submit" value='&#9989;' />
             </form>
