@@ -3,7 +3,7 @@ import styles from '/src/styles/product.module.scss'
 
 import PropTypes from 'prop-types'
 
-const Product = ({ handleSubmit, quantity, setQuantity }) => {
+const Product = ({ handleSubmit }) => {
     const items = [
         {
             preview: '/assets/imgs/preview/delux/side.webp',
@@ -59,7 +59,7 @@ const Product = ({ handleSubmit, quantity, setQuantity }) => {
         <section className={styles.productMaster}>
             <div className={styles.productWrapper}>
                 {items.map((obj, index) => (
-                    <ProductChild product={obj} key={index} handleSubmit={handleSubmit} quantity={quantity} setQuantity={setQuantity} />
+                    <ProductChild product={obj} key={index} handleSubmit={handleSubmit} />
                 ))}
             </div>
         </section>
@@ -68,8 +68,6 @@ const Product = ({ handleSubmit, quantity, setQuantity }) => {
 
 Product.propTypes = {
     handleSubmit: PropTypes.func,
-    quantity: PropTypes.number,
-    setQuantity: PropTypes.func,
 }
 
 export default Product
