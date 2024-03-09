@@ -13,12 +13,28 @@ import { useState } from "react";
 
 
 function App() {
-  const [cart, setCart] = useState([])
+  const [cart, setCart] = useState([{
+    preview: '/assets/imgs/preview/delux/side.webp',
+    preview2: '/assets/imgs/preview/delux/45-right.webp',
+    title: "Onitsuka Tiger",
+    model: "Mexico 66 Deluxe sneakers",
+    price: 100,
+    id: crypto.randomUUID()
+  },
+  {
+    preview: '/assets/imgs/preview/mito/side.webp',
+    preview2: '/assets/imgs/preview/mito/45-right.webp',
+    title: "Onitsuka Tiger",
+    model: "Mito low cut sneakers",
+    price: 100,
+    id: crypto.randomUUID()
+  },])
 
   const handleSubmit = (e, product, quantity) => {
     e.preventDefault()
 
     const newProduct = {
+      preview: product.preview,
       title: product.title,
       model: product.model,
       price: product.price,
@@ -63,6 +79,11 @@ function App() {
     }
   };
 
+  const deleteItem = (item) => {
+    const newCart = cart.filter((product) => product.id !== item.id);
+    setCart(newCart);
+  };
+
   return (
     <BrowserRouter>
       <section className="app">
@@ -71,7 +92,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/shop" element={<Shop handleSubmit={handleSubmit} />} />
-            <Route path="/cart" element={<Cart cart={cart} />} />
+            <Route path="/cart" element={<Cart cart={cart} deleteItem={deleteItem} />} />
             <Route path="*" element={<Error />} />
           </Routes>
         </main>
