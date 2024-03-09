@@ -71,7 +71,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/shop" element={<Shop handleSubmit={handleSubmit} />} />
-            <Route path="/cart" element={<Cart />} />
+            <Route path="/cart" element={<Cart cart={cart} />} />
             <Route path="*" element={<Error />} />
           </Routes>
         </main>
