@@ -1,12 +1,15 @@
 import PropTypes from "prop-types";
+import { useState } from "react";
 
 const SubRender = ({ type, text, altText, img, altImg }) => {
+  const [hover, setHover] = useState(false);
+
   function mouseEnter() {
-    console.log("mouse enter");
+    setHover(true);
   }
 
   function mouseLeave() {
-    console.log("mouse leave");
+    setHover(false);
   }
 
   return (
