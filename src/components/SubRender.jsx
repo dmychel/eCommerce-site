@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import { useState } from "react";
+import styles from "/src/styles/sub.module.scss";
 
 const SubRender = ({ type, text, altText, img, altImg }) => {
   const [hover, setHover] = useState(false);
@@ -13,7 +14,11 @@ const SubRender = ({ type, text, altText, img, altImg }) => {
   }
 
   return (
-    <section onMouseEnter={mouseEnter} onMouseLeave={mouseLeave}>
+    <section
+      onMouseEnter={mouseEnter}
+      onMouseLeave={mouseLeave}
+      className={type ? styles.sub : styles.sub2}
+    >
       <div>
         <p></p>
       </div>
