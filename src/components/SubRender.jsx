@@ -1,8 +1,16 @@
 import PropTypes from "prop-types";
 
 const SubRender = ({ type, text, altText, img, altImg }) => {
+  function mouseEnter() {
+    console.log("mouse enter");
+  }
+
+  function mouseLeave() {
+    console.log("mouse leave");
+  }
+
   return (
-    <section>
+    <section onMouseEnter={mouseEnter} onMouseLeave={mouseLeave}>
       <div>
         <p></p>
       </div>
