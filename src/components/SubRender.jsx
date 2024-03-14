@@ -20,10 +20,21 @@ const SubRender = ({ type, text, altText, img, altImg }) => {
         onMouseLeave={mouseLeave}
         className={hover ? styles.altText : styles.text}
       >
-        {hover ? <p>{altText}</p> : <p>{text}</p>}
+        {hover ? (
+          <p className={styles.fade}>{altText}</p>
+        ) : (
+          <p className={type ? styles.slideLeft : styles.slideRight}>{text}</p>
+        )}
       </div>
       <div className={hover ? styles.altImg : styles.image}>
-        {hover ? <img src={altImg} /> : <img src={img} />}
+        {hover ? (
+          <img
+            className={type ? styles.slideRight : styles.slideLeft}
+            src={altImg}
+          />
+        ) : (
+          <img className={styles.fade} src={img} />
+        )}
       </div>
     </section>
   );
