@@ -1,6 +1,6 @@
 import styles from "/src/styles/header.module.scss";
 import { Link } from "react-router-dom";
-import PropTypes from 'prop-types'
+import PropTypes from "prop-types";
 
 const Header = ({ cart }) => {
   return (
@@ -11,12 +11,11 @@ const Header = ({ cart }) => {
       <nav>
         <Link to="/shop">shop</Link>
         <div className={styles.cart}>
-          <Link to='/cart'>
+          <Link to="/cart">
             <img src="/assets/imgs/icons/cart.png" alt="" />
           </Link>
           <span>{cart.length}</span>
         </div>
-
       </nav>
     </header>
   );
@@ -24,6 +23,6 @@ const Header = ({ cart }) => {
 
 Header.propTypes = {
   cart: PropTypes.array,
-}
+};
 
 export default Header;
