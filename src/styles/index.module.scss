@@ -8,7 +8,6 @@
   width: 100%;
   height: 100vh;
   display: flex;
-
   animation: fadeIn 1s;
 }
 
@@ -44,6 +43,29 @@
 .button:hover {
   background-color: coral;
   border: 1px solid white;
+}
+
+@media screen and (max-width: 640px) {
+  .sub,
+  .sub2 {
+    height: fit-content;
+    flex-direction: column;
+    gap: 0;
+  }
+  .text,
+  .altText {
+    height: 300px;
+  }
+
+  .text p {
+    font-size: 3rem;
+    text-decoration: underline;
+  }
+
+  .altText p {
+    padding: 1em;
+    font-size: 1.75rem;
+  }
 }
 
 @keyframes fadeIn {

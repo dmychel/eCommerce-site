@@ -20,19 +20,22 @@
   animation: fadeIn 1s;
 }
 
-.image,
+.image {
+  background-color: rgba(0, 0, 0, 0.21);
+}
+
 .altImg {
-  background-color: rgba(0, 0, 0, 0.39);
+  background-color: rgba(0, 0, 0, 0.402);
 }
 
 .text {
-  font-size: 2rem;
+  font-size: 3.5rem;
   text-align: center;
   width: 100%;
 }
 
 .text p {
-  backdrop-filter: blur(4px);
+  color: white;
 }
 
 .altText {
@@ -56,6 +59,48 @@
 
 .fade {
   animation: fadeIn 1s;
+}
+
+@media screen and (max-width: 1280px) {
+  .text p {
+    font-size: 2rem;
+  }
+
+  .altText p {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .altText p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .sub,
+  .sub2 {
+    height: fit-content;
+    flex-direction: column;
+    gap: 0;
+  }
+  .text,
+  .altText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+  }
+
+  .text p {
+    font-size: 3rem;
+    text-decoration: underline;
+  }
+
+  .altText p {
+    padding: 1em;
+    font-size: 1.75rem;
+  }
 }
 
 @keyframes fadeIn {
