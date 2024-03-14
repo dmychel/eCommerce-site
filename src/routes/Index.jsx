@@ -17,14 +17,6 @@ const Index = () => {
       </section>
 
       <SubRender
-        type={true}
-        text={`Reborn & Reimagined.`}
-        altText={`Onitsuka Tiger grew to become ASICS, and go on to establish itself as one of the world's leading sports brands.`}
-        img={`/assets/imgs/sub/sub-2.webp`}
-        altImg={`/assets/imgs/sub/tales8.webp`}
-      />
-
-      <SubRender
         type={false}
         text={`Reborn & Reimagined.`}
         altText={`Onitsuka Tiger grew to become ASICS, and go on to establish itself as one of the world's leading sports brands.`}
@@ -34,6 +26,14 @@ const Index = () => {
 
       <SubRender
         type={true}
+        text={`Reborn & Reimagined.`}
+        altText={`Onitsuka Tiger grew to become ASICS, and go on to establish itself as one of the world's leading sports brands.`}
+        img={`/assets/imgs/sub/sub-2.webp`}
+        altImg={`/assets/imgs/sub/tales8.webp`}
+      />
+
+      <SubRender
+        type={false}
         text={`Reborn & Reimagined.`}
         altText={`Onitsuka Tiger grew to become ASICS, and go on to establish itself as one of the world's leading sports brands.`}
         img={`/assets/imgs/sub/sub-2.webp`}
