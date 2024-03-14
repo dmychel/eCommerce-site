@@ -7,7 +7,7 @@
 main {
   display: flex;
   flex-direction: column;
-  background-image: url('/assets/imgs/background.webp');
+  background-image: url("/assets/imgs/background.webp");
   background-size: auto;
   background-repeat: space;
   background-position: auto;
