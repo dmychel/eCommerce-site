@@ -5,6 +5,7 @@
   align-items: center;
   max-width: 100%;
   border: 1px solid black;
+  animation: fadeIn 1s;
 }
 
 .productWrapper {
@@ -21,6 +22,12 @@
   width: 15%;
   background-color: white;
   padding: 20px;
+}
+
+.productImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 form {
@@ -73,5 +80,14 @@ input[type="submit"] {
 @media screen and (max-width: 686px) {
   .product {
     width: 80%;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
   }
 }
