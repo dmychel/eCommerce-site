@@ -1,7 +1,7 @@
-import PropTypes from 'prop-types'
-import styles from '/src/styles/cart.module.scss'
+import PropTypes from "prop-types";
+import styles from "/src/styles/cart.module.scss";
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 
 const Cart = ({ cart, deleteItem }) => {
   const [price, setPrice] = useState(0);
@@ -43,47 +43,45 @@ const Cart = ({ cart, deleteItem }) => {
   };
 
   return (
-    <div className={styles.cart}>
-      <section className={styles.cartItems}>
-        {cart.map((item) => (
-          <div className={styles.card} key={item.id}>
+    <div className={styles.cartMaster}>
+      <section className={styles.cartWrapper}>
+        <div className={styles.cartItems}>
+          {cart.map((item) => (
+            <div className={styles.card} key={item.id}>
+              <button
+                className={styles.delete}
+                onClick={() => deleteItem(item)}
+              >
+                &#10005;
+              </button>
 
-            <button className={styles.delete} onClick={() => deleteItem(item)}>
-              &#10005;
-            </button>
-
-            <div className={styles.info}>
-
-              <div className={styles.image}>
-                <img src={item.preview} alt="item-preview" />
+              <div className={styles.info}>
+                <div className={styles.image}>
+                  <img src={item.preview} alt="item-preview" />
+                </div>
+                <div className={styles.text}>
+                  <p>{item.title}</p>
+                  <p>{item.model}</p>
+                  <span className="price">${item.price}</span>
+                </div>
               </div>
-              <div className={styles.text}>
-                <p>{item.title}</p>
-                <p>{item.model}</p>
-                <span className="price">${item.price}</span>
-              </div>
-
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </section>
       <section className={styles.checkout}>
         <div className={styles.summary}>
           <div>
-            <span>Subtotal</span>
-            <span>${price}</span>
+            <span>Subtotal: ${price}</span>
           </div>
           <div>
-            <span>Delivery</span>
-            <span> -- </span>
+            <span>Delivery: --</span>
           </div>
           <div>
-            <span>Taxes</span>
-            <span>${taxes}</span>
+            <span>Taxes: ${taxes}</span>
           </div>
           <div>
-            <span>Total</span>
-            <span>${total}</span>
+            <span>Total: ${total}</span>
           </div>
         </div>
       </section>
@@ -94,6 +92,6 @@ const Cart = ({ cart, deleteItem }) => {
 Cart.propTypes = {
   cart: PropTypes.array,
   deleteItem: PropTypes.func,
-}
+};
 
 export default Cart;
