@@ -83,6 +83,7 @@ const Cart = ({ cart, deleteItem }) => {
           <div>
             <span>Total: ${total}</span>
           </div>
+          <button>Pay Now</button>
         </div>
       </section>
     </div>
