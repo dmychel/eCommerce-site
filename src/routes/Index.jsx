@@ -18,25 +18,25 @@ const Index = () => {
 
       <SubRender
         type={false}
-        text={`Reborn & Reimagined.`}
-        altText={`Onitsuka Tiger grew to become ASICS, and go on to establish itself as one of the world's leading sports brands.`}
-        img={`/assets/imgs/sub/sub-2.webp`}
-        altImg={`/assets/imgs/sub/tales8.webp`}
+        text={`BORN FROM AMBITION`}
+        altText={`A story that started from a humble idea that sport had the power to transform lives. Anima Sana In Corpore Sano - sound mind, sound body. The Latin maxim that was the ethos behind Onitsuka Tiger, and later became the acronym ASICS.`}
+        img={`/assets/imgs/sub/sub-4.webp`}
+        altImg={`/assets/imgs/sub/tales1.webp`}
       />
 
       <SubRender
         type={true}
-        text={`Reborn & Reimagined.`}
-        altText={`Onitsuka Tiger grew to become ASICS, and go on to establish itself as one of the world's leading sports brands.`}
+        text={`THE BIRTH OF AN ICON`}
+        altText={`Changes made in 1966 are still evident today. The Onitsuka Tiger stripe first appeared that year and still adorns the sides of Onitsuka Tiger and ASICS shoes. The stripe first appeared on the LIMBER UP Leather BK, introduced for the 1968 Mexico Olympic Game.`}
         img={`/assets/imgs/sub/sub-2.webp`}
-        altImg={`/assets/imgs/sub/tales8.webp`}
+        altImg={`/assets/imgs/sub/tales5.webp`}
       />
 
       <SubRender
         type={false}
         text={`Reborn & Reimagined.`}
         altText={`Onitsuka Tiger grew to become ASICS, and go on to establish itself as one of the world's leading sports brands.`}
-        img={`/assets/imgs/sub/sub-2.webp`}
+        img={`/assets/imgs/sub/sub-3.webp`}
         altImg={`/assets/imgs/sub/tales8.webp`}
       />
     </div>
